@@ -3,6 +3,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-const props = defineProps({ msg: String })
+interface Props {
+  msg: string
+}
+
+const props = defineProps<Props>()
 </script>
