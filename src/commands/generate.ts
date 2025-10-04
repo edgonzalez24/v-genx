@@ -1,9 +1,9 @@
 import fs from 'fs-extra';
 import ejs from 'ejs';
 import path from 'path';
-import { GenerateOptions } from '../types/options';
-import { getTemplatePath, getOutputPath } from '../src/utils/path';
-import { getFileExtension } from '../src/utils/extensions';
+import { GenerateOptions } from '../../types/options';
+import { getTemplatePath, getOutputPath } from '../utils/path';
+import { getFileExtension } from '../utils/extensions';
 
 export const generate = async (
   type: string,
