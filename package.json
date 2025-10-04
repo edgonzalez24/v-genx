@@ -2,14 +2,19 @@
   "name": "v-genx",
   "version": "0.1.0",
   "description": "v-genx: The ultimate CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components",
-  "main": "./bin/cli.js",
+  "main": "./dist/cli.js",
   "bin": {
     "v-genx": "./bin/cli.js"
   },
   "scripts": {
-    "build": "bun build src/cli.ts --outdir dist --target node",
+    "build": "bun build src/cli.ts --outdir dist --target bun --format esm",
     "dev": "bun run src/cli.ts"
   },
+  "files": [
+    "bin",
+    "dist",
+    "templates"
+  ],
   "dependencies": {
     "chalk": "4",
     "commander": "^14.0.1",
