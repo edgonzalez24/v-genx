@@ -1,7 +1,7 @@
 {
   "name": "v-gen",
   "version": "0.1.0",
-  "description": "v-gen: The ultimate global CLI to instantly generate components, views, and boilerplate for Vue.js projects.",
+  "description": "v-gen: The ultimate CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components",
   "main": "./bin/cli.js",
   "bin": {
     "v-gen": "./bin/cli.js"
