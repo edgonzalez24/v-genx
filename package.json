@@ -1,10 +1,10 @@
 {
-  "name": "v-gen",
+  "name": "v-genx",
   "version": "0.1.0",
-  "description": "v-gen: The ultimate CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components",
+  "description": "v-genx: The ultimate CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components",
   "main": "./bin/cli.js",
   "bin": {
-    "v-gen": "./bin/cli.js"
+    "v-genx": "./bin/cli.js"
   },
   "scripts": {
     "build": "bun build src/cli.ts --outdir dist --target node",

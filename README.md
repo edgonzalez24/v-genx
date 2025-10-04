@@ -1,6 +1,6 @@
-# 🧩 v-gen — Vue Component Generator
+# 🧩 v-genx — Vue Component Generator
 
-**v-gen** is a CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components.  
+**v-genx** is a CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components.  
 It supports both the **Options API** and **Composition API**, and can optionally use **TypeScript**.
 
 ---
@@ -9,21 +9,21 @@ It supports both the **Options API** and **Composition API**, and can optionally
 
 ### Global installation (recommended)
 ```bash
-npm install -g v-gen
+npm install -g v-genx
 ```
 or with  Bun
 ```bash
-bun add --global v-gen
+bun add --global v-genx
 ```
 
 ### Local installation (per project)
 ```bash
-bun add -D v-gen
+bun add -D v-genx
 ```
 
 ## ⚙️ Usage
 ```bash
-v-gen g <type> <name> [options]
+v-genx g <type> <name> [options]
 ```
 - `<type>` → Type of resource to generate (e.g. component)
 - `<name>` → The name of the resource (e.g. Button, Card)
@@ -41,7 +41,7 @@ v-gen g <type> <name> [options]
 
 #### Vue 3 + Composition API + TypeScript
 ```bash
-v-gen g component Card --vue3 --composition --ts
+v-genx g component Card --vue3 --composition --ts
 ```
 Creates something like:
 ```bash
@@ -50,7 +50,7 @@ src/components/Card.vue
 
 #### Vue 2 (Options API)
 ```bash
-v-gen g component Button --vue2
+v-genx g component Button --vue2
 ```
 Creates:
 ```bash
@@ -63,7 +63,7 @@ By default, generated files are placed in:
 src/components/
 ```
 
-You can customize the output path in your project root using a `vgen.config.json`:
+You can customize the output path in your project root using a `vgenx.config.json`:
 ```bash
 {
   "paths": {
@@ -73,7 +73,7 @@ You can customize the output path in your project root using a `vgen.config.json
 ```
 Now, running:
 ```bash
-v-gen g component Card --vue2
+v-genx g component Card --vue2
 ```
 will generate the file at:
 ```bash

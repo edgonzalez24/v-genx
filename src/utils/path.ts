@@ -40,7 +40,7 @@ export const getTemplatePath = (type: string, options: GenerateOptions) => {
 };
 
 const loadConfig = () => {
-  const configPath = path.join(process.cwd(), 'vgen.config.json');
+  const configPath = path.join(process.cwd(), 'vgenx.config.json');
   if (fs.existsSync(configPath)) {
     return JSON.parse(fs.readFileSync(configPath, 'utf8'));
   }

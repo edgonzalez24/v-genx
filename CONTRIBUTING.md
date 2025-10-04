@@ -1,6 +1,6 @@
-# Contributing to VGen
+# Contributing to VGenX
 
-Thank you for your interest in contributing to **v-gen** 🎉!
+Thank you for your interest in contributing to **v-genx** 🎉!
 This document describes the guidelines for contributing to the project.
 
 ### Getting Started
@@ -8,7 +8,7 @@ This document describes the guidelines for contributing to the project.
 Fork the repository, or clone it:
 
 ```bash
-git clone https://github.com/edgonzalez24/v-gen
+git clone https://github.com/edgonzalez24/v-genx
 ```
 
 Install dependencies using [bun](https://bun.com/)
