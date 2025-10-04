@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 import { GenerateOptions } from '../../types/options';
 
 export const getTemplatePath = (type: string, options: GenerateOptions) => {
@@ -38,10 +39,24 @@ export const getTemplatePath = (type: string, options: GenerateOptions) => {
   );
 };
 
+const loadConfig = () => {
+  const configPath = path.join(process.cwd(), 'vgen.config.json');
+  if (fs.existsSync(configPath)) {
+    return JSON.parse(fs.readFileSync(configPath, 'utf8'));
+  }
+  return {};
+}
+
 export const getOutputPath = (type: string, name: string, ext: string) => {
-  const outputDir = path.join(
-    process.cwd(),
-    type === 'component' ? 'src/components' : `src/${type}s`
-  );
-  return { outputDir, outputFile: path.join(outputDir, `${name}${ext}`) };
+  const config = loadConfig();
+
+  const baseDir =
+    config.paths?.[type] ??
+    (type === 'component' ? 'src/components' : `src/${type}s`);
+
+  const outputDir = path.isAbsolute(baseDir)
+    ? baseDir
+    : path.join(process.cwd(), baseDir);
+    
+  return { outputFile: path.join(outputDir, `${name}${ext}`) };
 };
