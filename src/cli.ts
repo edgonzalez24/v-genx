@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { program } from 'commander';
-import { generate } from '../commands/generate';
+import { generate } from '../src/commands/generate';
 
 program
   .command('g <type> <name>')
