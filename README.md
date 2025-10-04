@@ -16,11 +16,6 @@ or with  Bun
 bun add --global v-genx
 ```
 
-### Local installation (per project)
-```bash
-bun add -D v-genx
-```
-
 ## ⚙️ Usage
 ```bash
 v-genx g <type> <name> [options]
