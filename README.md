@@ -79,6 +79,8 @@ Defines the base paths for generated files.
 
 ## 📦 Examples
 
+[Loom Demo](https://www.loom.com/share/df2f1ff707bb4b458b8f7171d5bffd94?sid=c8c40066-7d80-4498-81ae-54c96bf46c58)
+
 If your CLI or generator supports this setting, you can use it like this:
 ```bash
 v-genx g component Card
