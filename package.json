@@ -1,6 +1,6 @@
 {
   "name": "v-genx",
-  "version": "0.1.2",
+  "version": "1",
   "description": "v-genx: The ultimate CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components",
   "main": "./dist/cli.js",
   "bin": {
