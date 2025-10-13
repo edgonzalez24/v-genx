@@ -1,6 +1,4 @@
-import path from 'path';
-
-export const getFileExtension = (templateFile: string, typescript: boolean) => {
-  if (typescript) return '.ts';
-  return path.extname(templateFile);
+export const getFileExtension = (templateFile: string, ts: boolean): string => {
+  if (templateFile.endsWith('.vue')) return '.vue';
+  return ts ? '.ts' : '.js';
 };
